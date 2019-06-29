@@ -1,0 +1,2 @@
+# LocalHotSpot
+First Group Project
