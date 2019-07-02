@@ -1,0 +1,58 @@
+body {
+    background: url(../images/background.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headH1 {
+    color: white;
+    margin-top: 40px;
+    margin-left: 180px;
+    font-size: 55px;
+    font-family: 'Lora', serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#signIn {
+    height: 500px;
+    background: black;
+    opacity: .6;
+    margin-left: 380px;
+    margin-top: 40px;
+    color: white;
+}
+
+#signH3 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+#uName {
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+#pWord {
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#logInBtn {
+    margin-left: 140px;
+    margin-top: 40px;
+}
+
+#dha {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+#newAcctBtn {
+    margin-left: 70px;
+}
