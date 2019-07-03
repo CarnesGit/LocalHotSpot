@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 </head>
 
@@ -17,6 +18,7 @@
         <div class="row">
             <h1 id="headH1">Plan your Trip to Wildwood NJ!</h1>
         </div>
+
         <div class="row">
             <div id="signIn" class="col-lg-4">
                 <h3 id="signH3">Sign into your account</h3>
@@ -26,6 +28,18 @@
                 <button id="logInBtn" type="button" class="btn btn-light">Log In</button>
                 <h5 id="dha">Don't have an account?</h5>
                 <button id="newAcctBtn" type="button" class="btn btn-link">Click Here to Create One!</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="createAcct" class="col-lg-4">
+                <h5 id="createH5">Choose your UserName</h5>
+                <input id="createUserName" type="text" placeholder="Username">
+                <h5 id="createH52">Choose your Password.</h5>
+                <input id="createPassword" type="text" placeholder="Password">
+                <h5 id="createH53">Password must contain at least 1 uppercase, and 1 special character.</h5>
+                <button id="createBtn" type="button" class="btn btn-light">Create Account</button>
+                <button id="createCancelBtn" type="button" class="btn btn-danger">Cancel</button>
             </div>
         </div>
     </div>
