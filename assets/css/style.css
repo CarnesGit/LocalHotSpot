@@ -56,3 +56,48 @@ body {
 #newAcctBtn {
     margin-left: 70px;
 }
+
+#createAcct {
+    height: 500px;
+    background: black;
+    opacity: .6;
+    margin-left: 380px;
+    margin-top: 130px;
+    color: white;
+}
+
+#createUserName {
+    width: 300px;
+    margin-left: 25px;
+    /* margin-top: 40px; */
+}
+
+#createPassword {
+    width: 300px;
+    margin-left: 25px;
+    /* margin-top: 40px; */
+}
+
+#createH5 {
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+#createH52 {
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+#createH53 {
+    /* margin-top: 40px; */
+    margin-left: 25px;
+}
+
+#createBtn {
+    margin-top: 40px;
+    margin-left: 65px;
+}
+
+#createCancelBtn {
+    margin-top: 40px;
+}
