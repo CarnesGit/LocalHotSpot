@@ -22,4 +22,5 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
+
 });
