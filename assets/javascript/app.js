@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $('#createAcct').hide();
 
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-    "q=CapeMay,NJ&units=imperial&appid=" + APIKey;fc3eedbc130c2c600959bc0285839654de13a77a
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+        "q=CapeMay,NJ&units=imperial&appid=" + APIKey;
+    fc3eedbc130c2c600959bc0285839654de13a77a
 
     $('#newAcctBtn').click(function() {
         $('#signIn').hide();
@@ -42,12 +43,12 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
             console.log("Humidity: " + response.main.humidity);
             console.log("Temperature (F): " + response.main.temp);
         });
-});
-        // Log the data in the console as well
-        console.log("Wind Speed: " + response.wind.speed);
-        console.log("Humidity: " + response.main.humidity);
-        console.log("Temperature (F): " + response.main.temp);
-    });
+
+    // Log the data in the console as well
+    console.log("Wind Speed: " + response.wind.speed);
+    console.log("Humidity: " + response.main.humidity);
+    console.log("Temperature (F): " + response.main.temp);
+
 
 
     $('#createCancelBtn').click(function() {
@@ -62,6 +63,3 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     });
 
 });
-
-});
-
