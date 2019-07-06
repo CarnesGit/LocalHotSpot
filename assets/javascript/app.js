@@ -1,3 +1,4 @@
+
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     "q=CapeMay,NJ&units=imperial&appid=" + APIKey;
 
@@ -26,3 +27,18 @@ $.ajax({
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
     });
+$(document).ready(function() {
+    $('#createAcct').hide();
+
+    $('#newAcctBtn').click(function() {
+        $('#signIn').hide();
+        $('#headH1').hide();
+        $('#createAcct').show();
+        $('body').css("background", "url('assets/images/createAcct.jpg') no-repeat center center fixed");
+        $('body').css("-webkit-background-size", "cover");
+        $('body').css("-moz-background-size", "cover");
+        $('body').css("-o-background-size", "cover");
+        $('body').css("background-size", "cover");
+    });
+});
+
