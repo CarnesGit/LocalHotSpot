@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 $(document).ready(function() {
     $('#createAcct').hide();
+=======
+
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+    "q=CapeMay,NJ&units=imperial&appid=" + APIKey;
+>>>>>>> fc3eedbc130c2c600959bc0285839654de13a77a
 
     $('#newAcctBtn').click(function() {
         $('#signIn').hide();
@@ -28,6 +34,7 @@ $(document).ready(function() {
             // Log the resulting object
             console.log(response);
 
+<<<<<<< HEAD
             // Transfer content to HTML
             $(".city").html("<h1>" + response.name + " Weather Details</h1>");
             $(".wind").text("Wind Speed: " + response.wind.speed);
@@ -40,3 +47,25 @@ $(document).ready(function() {
             console.log("Temperature (F): " + response.main.temp);
         });
 });
+=======
+        // Log the data in the console as well
+        console.log("Wind Speed: " + response.wind.speed);
+        console.log("Humidity: " + response.main.humidity);
+        console.log("Temperature (F): " + response.main.temp);
+    });
+$(document).ready(function() {
+    $('#createAcct').hide();
+
+    $('#newAcctBtn').click(function() {
+        $('#signIn').hide();
+        $('#headH1').hide();
+        $('#createAcct').show();
+        $('body').css("background", "url('assets/images/createAcct.jpg') no-repeat center center fixed");
+        $('body').css("-webkit-background-size", "cover");
+        $('body').css("-moz-background-size", "cover");
+        $('body').css("-o-background-size", "cover");
+        $('body').css("background-size", "cover");
+    });
+});
+
+>>>>>>> fc3eedbc130c2c600959bc0285839654de13a77a
