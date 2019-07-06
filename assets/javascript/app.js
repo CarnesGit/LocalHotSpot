@@ -1,10 +1,6 @@
 $(document).ready(function() {
     $('#createAcct').hide();
 
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-        "q=CapeMay,NJ&units=imperial&appid=" + APIKey;
-    fc3eedbc130c2c600959bc0285839654de13a77a
-
     $('#newAcctBtn').click(function() {
         $('#signIn').hide();
         $('#headH1').hide();
@@ -18,13 +14,16 @@ $(document).ready(function() {
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
         "q=CapeMay,NJ&units=imperial&appid=" + APIKey;
 
-    // Here we run our AJAX call to the OpenWeatherMap API
-    $.ajax({
+    var APIKey =
+
+        // Here we run our AJAX call to the OpenWeatherMap API
+        $.ajax({
             url: queryURL,
             method: "GET"
-        })
-        // We store all of the retrieved data inside of an object called "response"
-        .then(function(response) {
+        }).then(function(response) {
+
+            // We store all of the retrieved data inside of an object called "response"
+
 
             // Log the queryURL
             console.log(queryURL);
@@ -43,23 +42,5 @@ $(document).ready(function() {
             console.log("Humidity: " + response.main.humidity);
             console.log("Temperature (F): " + response.main.temp);
         });
-
-    // Log the data in the console as well
-    console.log("Wind Speed: " + response.wind.speed);
-    console.log("Humidity: " + response.main.humidity);
-    console.log("Temperature (F): " + response.main.temp);
-
-
-
-    $('#createCancelBtn').click(function() {
-        $('#signIn').show();
-        $('#headH1').show();
-        $('#createAcct').hide();
-        $('body').css("background", "url('assets/images/background.jpg') no-repeat center center fixed");
-        $('body').css("-webkit-background-size", "cover");
-        $('body').css("-moz-background-size", "cover");
-        $('body').css("-o-background-size", "cover");
-        $('body').css("background-size", "cover");
-    });
 
 });
