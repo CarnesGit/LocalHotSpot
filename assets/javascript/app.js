@@ -12,7 +12,6 @@ $(document).ready(function() {
         $('body').css("background-size", "cover");
     });
 
-    // RICK, PUT THE API KEY BACK
     var APIKey = "e3e26770ea91f1526f1d91e4b4212507";
 
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=08260,us&units=imperial&appid=" + APIKey;
@@ -25,6 +24,17 @@ $(document).ready(function() {
 
         // We store all of the retrieved data inside of an object called "response"
 
+        // Log the queryURL
+        console.log(queryURL);
+
+        // Log the resulting object
+        console.log(response);
+
+        // Transfer content to HTML
+        $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+        $(".wind").text("Wind Speed: " + response.wind.speed);
+        $(".humidity").text("Humidity: " + response.main.humidity);
+        $(".temp").text("Temperature (F) " + response.main.temp);
 
         // Log the queryURL
         console.log(queryURL);
@@ -55,6 +65,4 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-
-
 });
