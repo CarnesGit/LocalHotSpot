@@ -49,5 +49,21 @@ $(document).ready(function() {
             console.log("Temperature (F): " + response.main.temp);
         });
 
+<<<<<<< HEAD
 >>>>>>> 59707e40fe3d3452d23fe0fc8943b70ba44b2e72
+=======
+
+    $('#createCancelBtn').click(function() {
+        $('#signIn').show();
+        $('#headH1').show();
+        $('#createAcct').hide();
+        $('body').css("background", "url('assets/images/background.jpg') no-repeat center center fixed");
+        $('body').css("-webkit-background-size", "cover");
+        $('body').css("-moz-background-size", "cover");
+        $('body').css("-o-background-size", "cover");
+        $('body').css("background-size", "cover");
+    });
+
+
+>>>>>>> 51016c3ccb0a6c889073deac2f0ff617d512b268
 });
