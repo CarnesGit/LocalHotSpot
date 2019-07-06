@@ -36,22 +36,11 @@ $(document).ready(function() {
         $(".humidity").text("Humidity: " + response.main.humidity);
         $(".temp").text("Temperature (F) " + response.main.temp);
 
-<<<<<<< HEAD
         // Log the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
     });
-=======
-            // Log the data in the console as well
-            console.log("Wind Speed: " + response.wind.speed);
-            console.log("Humidity: " + response.main.humidity);
-            console.log("Temperature (F): " + response.main.temp);
-        });
-
-<<<<<<< HEAD
->>>>>>> 59707e40fe3d3452d23fe0fc8943b70ba44b2e72
-=======
 
     $('#createCancelBtn').click(function() {
         $('#signIn').show();
@@ -63,7 +52,4 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-
-
->>>>>>> 51016c3ccb0a6c889073deac2f0ff617d512b268
 });
