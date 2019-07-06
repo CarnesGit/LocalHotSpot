@@ -36,9 +36,18 @@ $(document).ready(function() {
         $(".humidity").text("Humidity: " + response.main.humidity);
         $(".temp").text("Temperature (F) " + response.main.temp);
 
+<<<<<<< HEAD
         // Log the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
     });
+=======
+            // Log the data in the console as well
+            console.log("Wind Speed: " + response.wind.speed);
+            console.log("Humidity: " + response.main.humidity);
+            console.log("Temperature (F): " + response.main.temp);
+        });
+
+>>>>>>> 59707e40fe3d3452d23fe0fc8943b70ba44b2e72
 });
