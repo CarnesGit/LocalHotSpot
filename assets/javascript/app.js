@@ -11,7 +11,7 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-    var APIKey = e3e26770ea91f1526f1d91e4b4212507
+    var APIKey = "e3e26770ea91f1526f1d91e4b4212507"
 
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=CapeMay,NJ&units=imperial&appid=" + APIKey;
 
@@ -40,16 +40,5 @@ $(document).ready(function() {
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
-    });
-
-    $('#createCancelBtn').click(function() {
-        $('#signIn').show();
-        $('#headH1').show();
-        $('#createAcct').hide();
-        $('body').css("background", "url('assets/images/background.jpg') no-repeat center center fixed");
-        $('body').css("-webkit-background-size", "cover");
-        $('body').css("-moz-background-size", "cover");
-        $('body').css("-o-background-size", "cover");
-        $('body').css("background-size", "cover");
     });
 });
