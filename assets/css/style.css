@@ -69,13 +69,11 @@ body {
 #createUserName {
     width: 300px;
     margin-left: 25px;
-    /* margin-top: 40px; */
 }
 
 #createPassword {
     width: 300px;
     margin-left: 25px;
-    /* margin-top: 40px; */
 }
 
 #createH5 {
@@ -89,7 +87,6 @@ body {
 }
 
 #createH53 {
-    /* margin-top: 40px; */
     margin-left: 25px;
 }
 
@@ -100,4 +97,37 @@ body {
 
 #createCancelBtn {
     margin-top: 40px;
+}
+
+#mainPageHead {
+    color: #b5a2ad;
+    margin-top: 40px;
+    margin-left: 180px;
+    font-size: 55px;
+    font-family: 'Lora', serif;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+#weatherBox {
+    height: 500px;
+    margin-top: 5px;
+    margin-right: 5px;
+    opacity: .5;
+    background: black;
+}
+
+#trafficBox {
+    height: 500px;
+    margin-top: 5px;
+    margin-right: 5px;
+    opacity: .5;
+    background: black;
+}
+
+#hotelBox {
+    height: 500px;
+    margin-top: 5px;
+    opacity: .5;
+    background: black;
 }
