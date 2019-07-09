@@ -2,11 +2,24 @@ $(document).ready(function() {
     //hide the account creation screen on start
     $('#createAcct').hide();
 
+    //Account creation form
     $('#newAcctBtn').click(function() {
         $('#signIn').hide();
         $('#headH1').hide();
         $('#createAcct').show();
         $('body').css("background", "url('assets/images/createAcct.jpg') no-repeat center center fixed");
+        $('body').css("-webkit-background-size", "cover");
+        $('body').css("-moz-background-size", "cover");
+        $('body').css("-o-background-size", "cover");
+        $('body').css("background-size", "cover");
+    });
+
+    //Cancel account creation and go back to the log in screen
+    $('#createCancelBtn').click(function() {
+        $('#signIn').show();
+        $('#headH1').show();
+        $('#createAcct').hide();
+        $('body').css("background", "url('assets/images/background.jpg') no-repeat center center fixed");
         $('body').css("-webkit-background-size", "cover");
         $('body').css("-moz-background-size", "cover");
         $('body').css("-o-background-size", "cover");
@@ -55,15 +68,4 @@ $(document).ready(function() {
         console.log("Temperature (F): " + response.main.temp);
     });
 
-
-    $('#createCancelBtn').click(function() {
-        $('#signIn').show();
-        $('#headH1').show();
-        $('#createAcct').hide();
-        $('body').css("background", "url('assets/images/background.jpg') no-repeat center center fixed");
-        $('body').css("-webkit-background-size", "cover");
-        $('body').css("-moz-background-size", "cover");
-        $('body').css("-o-background-size", "cover");
-        $('body').css("background-size", "cover");
-    });
 });
