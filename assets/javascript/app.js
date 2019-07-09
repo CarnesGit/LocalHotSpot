@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //hide the account creation screen on start
     $('#createAcct').hide();
 
     $('#newAcctBtn').click(function() {
@@ -12,8 +13,8 @@ $(document).ready(function() {
         $('body').css("background-size", "cover");
     });
 
+    // Weather API variables
     var APIKey = "e3e26770ea91f1526f1d91e4b4212507";
-
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=08260,us&units=imperial&appid=" + APIKey;
 
     // Here we run our AJAX call to the OpenWeatherMap API
