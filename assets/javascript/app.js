@@ -1,6 +1,10 @@
 $(document).ready(function() {
     //hide the account creation screen on start
     $('#createAcct').hide();
+    $('#mainPageHead').hide();
+    $('#weatherBox').hide();
+    $('#trafficBox').hide();
+    $('#hotelBox').hide();
 
     //Account creation form
     $('#newAcctBtn').click(function() {
@@ -61,5 +65,22 @@ $(document).ready(function() {
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
     });
+
+    // Mock click event on Log In button to move forward with layout
+    $('#logInBtn').click(function() {
+        $('#signIn').hide();
+        $('#headH1').hide();
+        $('#createAcct').hide();
+        $('#mainPageHead').show();
+        $('#weatherBox').show();
+        $('#trafficBox').show();
+        $('#hotelBox').show();
+        $('body').css("background", "url('assets/images/mainPage.jpg') no-repeat center center fixed");
+        $('body').css("-webkit-background-size", "cover");
+        $('body').css("-moz-background-size", "cover");
+        $('body').css("-o-background-size", "cover");
+        $('body').css("background-size", "cover");
+    });
+
 
 });
