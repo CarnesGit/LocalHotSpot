@@ -39,6 +39,8 @@ $(document).ready(function() {
         url: queryURL,
         method: "GET"
     }).then(function(response) {
+        // $("#weatherBox").text(JSON.stringify(response));
+
 
         // We store all of the retrieved data inside of an object called "response"
 
@@ -49,10 +51,10 @@ $(document).ready(function() {
         console.log(response);
 
         // Transfer content to HTML
-        $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-        $(".wind").text("Wind Speed: " + response.wind.speed);
-        $(".humidity").text("Humidity: " + response.main.humidity);
-        $(".temp").text("Temperature (F) " + response.main.temp);
+        $("#city").html(response.name + " Weather Details");
+        $("#wind").text("Wind Speed: " + response.wind.speed);
+        $("#humidity").text("Humidity: " + response.main.humidity);
+        $("#temp").text("Temperature (F) " + response.main.temp);
 
         // Log the queryURL
         console.log(queryURL);
