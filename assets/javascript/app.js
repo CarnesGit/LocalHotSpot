@@ -1,4 +1,5 @@
 $(document).ready(function() { 
+    // hide the account creation screen on start
     $('#createAcct').hide();
     $('#mainPageHead').hide();
     $('#weatherBox').hide();
