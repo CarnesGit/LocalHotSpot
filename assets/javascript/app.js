@@ -81,17 +81,18 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-var config = {
-  apiKey: "AIzaSyCanlYIc7n-Wel8wDeaMxMzYtViVVCOwpI",
-  authDomain: "my-first-firebase-51cb0.firebaseapp.com",
-  databaseURL: "https://my-first-firebase-51cb0.firebaseio.com",
-  storageBucket: "recent-user-with-push.appspot.com",
-  messagingSenderId: "208476116054"
-};
+    var firebaseConfig = {
+      apiKey: "AIzaSyD_Y5vVG95B78qd_HuzzzAOZWp7cYvxDPk",
+      authDomain: "my-first-firebase-51cb0.firebaseapp.com",
+      databaseURL: "https://my-first-firebase-51cb0.firebaseio.com",
+      projectId: "my-first-firebase-51cb0",
+      storageBucket: "my-first-firebase-51cb0.appspot.com",
+      messagingSenderId: "145849620073",
+      appId: "1:145849620073:web:1c4134d7d2c25a85"
+    };
 var password = null;
 var user =  null;
-firebase.initializeApp(config);
-  console.log(config);
+firebase.initializeApp(firebaseConfig);
   var dataRef = firebase.database();
     $("#createBtn").click(function(event) {
         event.preventDefault();
