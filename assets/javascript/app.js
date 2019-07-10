@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    //hide the account creation screen on start
+$(document).ready(function() { 
+    // hide the account creation screen on start
     $('#createAcct').hide();
     $('#mainPageHead').hide();
     $('#weatherBox').hide();
@@ -81,6 +81,34 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-
-
+var config = {
+  apiKey: "AIzaSyCanlYIc7n-Wel8wDeaMxMzYtViVVCOwpI",
+  authDomain: "my-first-firebase-51cb0.firebaseapp.com",
+  databaseURL: "https://my-first-firebase-51cb0.firebaseio.com",
+  storageBucket: "recent-user-with-push.appspot.com",
+  messagingSenderId: "208476116054"
+};
+var password = null;
+var user =  null;
+firebase.initializeApp(config);
+  console.log(config);
+  var dataRef = firebase.database();
+    $("#createBtn").click(function(event) {
+        event.preventDefault();
+         password = $("#createPassword").val();
+         user =  $("#createUserName").val();
+        console.log(password);
+        console.log(user);
+firebase.auth().createUserWithEmailAndPassword(user, password).then(function(response){console.log(response);}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log(errorCode);
+  console.log(errorMessage);
+  // ...
 });
+});
+});
+
+
+
