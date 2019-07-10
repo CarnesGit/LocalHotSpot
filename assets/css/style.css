@@ -115,6 +115,11 @@ body {
     margin-right: 5px;
     opacity: .5;
     background: black;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    overflow: hidden;
 }
 
 #trafficBox {
@@ -130,4 +135,33 @@ body {
     margin-top: 5px;
     opacity: .5;
     background: black;
+}
+
+#city {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+#wind {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#humidity {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#temp {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
