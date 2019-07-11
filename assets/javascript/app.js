@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(document).ready(function() {
     // hide the account creation screen on start
     $('#createAcct').hide();
     $('#mainPageHead').hide();
@@ -69,7 +69,47 @@ $(document).ready(function() {
     });
 
     // Mock click event on Log In button to move forward with layout
+    var password = null;
+    var user = null;
+    var firebaseConfig = {
+        apiKey: "AIzaSyD_Y5vVG95B78qd_HuzzzAOZWp7cYvxDPk",
+        authDomain: "my-first-firebase-51cb0.firebaseapp.com",
+        databaseURL: "https://my-first-firebase-51cb0.firebaseio.com",
+        projectId: "my-first-firebase-51cb0",
+        storageBucket: "my-first-firebase-51cb0.appspot.com",
+        messagingSenderId: "145849620073",
+        appId: "1:145849620073:web:1c4134d7d2c25a85"
+    };
+    firebase.initializeApp(firebaseConfig);
+    var dataRef = firebase.database();
+    $("#createBtn").click(function(event) {
+        event.preventDefault();
+        password = $("#createPassword").val();
+        user = $("#createUserName").val();
+        console.log(password);
+        console.log(user);
+        firebase.auth().createUserWithEmailAndPassword(user, password).then(function(response) { console.log(response); }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+            // ...
+        });
+    });
     $('#logInBtn').click(function() {
+        var user = firebase.auth().currentUser;
+        console.log(user.email);
+        console.log(user);
+        console.log("you clicked me");
+        var Suser = $("#uName").val();
+        var Spassword = $("#pWord").val();
+        firebase.auth().signInWithEmailAndPassword(Suser, Spassword).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+        });
         $('#signIn').hide();
         $('#headH1').hide();
         $('#createAcct').hide();
@@ -83,35 +123,6 @@ $(document).ready(function() {
         $('body').css("-o-background-size", "cover");
         $('body').css("background-size", "cover");
     });
-    var firebaseConfig = {
-      apiKey: "AIzaSyD_Y5vVG95B78qd_HuzzzAOZWp7cYvxDPk",
-      authDomain: "my-first-firebase-51cb0.firebaseapp.com",
-      databaseURL: "https://my-first-firebase-51cb0.firebaseio.com",
-      projectId: "my-first-firebase-51cb0",
-      storageBucket: "my-first-firebase-51cb0.appspot.com",
-      messagingSenderId: "145849620073",
-      appId: "1:145849620073:web:1c4134d7d2c25a85"
-    };
-var password = null;
-var user =  null;
-firebase.initializeApp(firebaseConfig);
-  var dataRef = firebase.database();
-    $("#createBtn").click(function(event) {
-        event.preventDefault();
-         password = $("#createPassword").val();
-         user =  $("#createUserName").val();
-        console.log(password);
-        console.log(user);
-firebase.auth().createUserWithEmailAndPassword(user, password).then(function(response){console.log(response);}).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  console.log(errorCode);
-  console.log(errorMessage);
-  // ...
-});
-});
-});
 
 
-
+});
