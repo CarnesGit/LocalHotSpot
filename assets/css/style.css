@@ -138,30 +138,24 @@ body {
 }
 
 #city {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-#wind {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+/* #wind {
+    
 }
 
 #humidity {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
 #temp {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
+} */
+
+#logOutBtn {
+    background: #b5a2ad;
+    height: 40px;
 }
