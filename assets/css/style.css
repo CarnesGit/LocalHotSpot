@@ -174,20 +174,13 @@ body {
     margin-bottom: 20px;
 }
 
-
-/* #wind {
-    
-}
-
-#humidity {
-    
-}
-
-#temp {
-    
-} */
-
 #logOutBtn {
     background: #b5a2ad;
     height: 40px;
+}
+
+#saveBtn {
+    /* background: green; */
+    width: 150px;
+    margin-top: 20px;
 }
