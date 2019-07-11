@@ -52,12 +52,15 @@ $(document).ready(function() {
 
         // Transfer content to HTML
         $("#city").html(response.name + " Weather Details");
-        $("#wind").text("Wind Speed: " + response.wind.speed);
-        $("#humidity").text("Humidity: " + response.main.humidity);
-        $("#temp").text("Temperature (F) " + response.main.temp);
+        $("#wind").text("Wind Speed: " + response.wind.speed + " mph");
+        $("#humidity").text("Humidity: " + response.main.humidity + "%");
+        $("#temp").text("Current Temperature: " + response.main.temp + `\u00B0` + "F");
+        $("#highTemp").text("Today's High: " + response.main.temp_max + `\u00B0` + "F");
+        $("#lowTemp").text("Today's Low: " + response.main.temp_min + `\u00B0` + "F");
         var icon = response.weather[0].icon
         var url = `http://openweathermap.org/img/wn/${icon}@2x.png`
         $('#weatherImg').attr('src', url)
+        $('#currentConditions').text(response.weather[0].description)
 
         // Log the queryURL
         console.log(queryURL);
