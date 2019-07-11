@@ -55,6 +55,9 @@ $(document).ready(function() {
         $("#wind").text("Wind Speed: " + response.wind.speed);
         $("#humidity").text("Humidity: " + response.main.humidity);
         $("#temp").text("Temperature (F) " + response.main.temp);
+        var icon = response.weather[0].icon
+        var url = `http://openweathermap.org/img/wn/${icon}@2x.png`
+        $('#weatherImg').attr('src', url)
 
         // Log the queryURL
         console.log(queryURL);
