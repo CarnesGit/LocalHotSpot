@@ -142,6 +142,38 @@ body {
     margin-bottom: 10px;
 }
 
+#wind {
+    margin-bottom: 20px;
+}
+
+#humidity {
+    margin-bottom: 20px;
+}
+
+#highTemp {
+    margin-bottom: 20px;
+}
+
+#temp {
+    margin-bottom: 20px;
+}
+
+#lowTemp {
+    margin-bottom: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#currentConditions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 /* #wind {
     
