@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#trafficBox').hide();
     $('#hotelBox').hide();
     $('#saveBtn').hide();
+    $('#logOutBtn').hide();
 
     //Account creation form
     $('#newAcctBtn').click(function() {
@@ -125,6 +126,7 @@ $(document).ready(function() {
         $('#trafficBox').show();
         $('#hotelBox').show();
         $('#saveBtn').show();
+        $('#logOutBtn').show();
         $('body').css("background", "url('assets/images/mainPage.jpg') no-repeat center center fixed");
         $('body').css("-webkit-background-size", "cover");
         $('body').css("-moz-background-size", "cover");
