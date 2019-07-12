@@ -135,6 +135,9 @@ body {
     margin-top: 5px;
     opacity: .5;
     background: black;
+    float: left;
+    width: 1000px;
+    overflow-y: auto;
 }
 
 #city {
@@ -182,4 +185,12 @@ body {
 #saveBtn {
     width: 150px;
     margin-top: 20px;
+}
+
+#hotelSpan {
+    color: white;
+}
+
+.hotels {
+    color: white;
 }
