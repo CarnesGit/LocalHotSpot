@@ -125,7 +125,7 @@ $(document).ready(function() {
         $('#weatherBox').show();
         $('#trafficBox').show();
         $('#hotelBox').show();
-        $('#saveBtn').show();
+        // $('#saveBtn').show();
         $('#logOutBtn').show();
         $('body').css("background", "url('assets/images/mainPage.jpg') no-repeat center center fixed");
         $('body').css("-webkit-background-size", "cover");
@@ -142,3 +142,17 @@ $(document).ready(function() {
 
 
 });
+
+// function initMap() {
+//     // The location of wildwood
+//     var wildwood = { lat: 38.9918, lng: -74.8149 };
+//     var wildwood2 = { lat: 38.9922, lng: -74.8151 };
+
+//     // The map, centered at wildwood
+//     var map = new google.maps.Map(
+//         document.getElementById('map'), { zoom: 10, center: wildwood });
+//     // The marker, positioned at wildwood
+//     var marker = new google.maps.Marker({ position: wildwood, map: map });
+//     var marker2 = new google.maps.Marker({ position: wildwood2, map: map });
+// }
+// u
