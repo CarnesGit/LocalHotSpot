@@ -134,5 +134,11 @@ $(document).ready(function() {
         $('body').css("background-size", "cover");
     });
 
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 38.9918, lng: -74.8149 },
+        zoom: 10
+    });
+
+
 
 });

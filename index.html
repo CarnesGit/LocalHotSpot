@@ -13,6 +13,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
     <script src="assets/javascript/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9HIpadsmU4Mp2L-IlcH76uL_AGVft550&callback=initMap"></script>
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 </head>
 
@@ -65,7 +66,7 @@
                 <div id="lowTemp"></div>
             </div>
             <div id="trafficBox" class="col-lg-4">
-
+                <div id="map"></div>
             </div>
             <div id="hotelBox" class="col-lg-3">
                 <span id="hotelSpan" class="center">Local Hotels</span>
@@ -239,6 +240,7 @@
 
         </div>
     </div>
+
 </body>
 
 </html>
