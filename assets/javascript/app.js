@@ -107,7 +107,7 @@ $(document).ready(function() {
     });
     $('#logInBtn').click(function() {
         var user = firebase.auth().currentUser;
-        console.log(user.email);
+        //console.log(user.email);
         console.log(user);
         console.log("you clicked me");
         var Suser = $("#uName").val();
