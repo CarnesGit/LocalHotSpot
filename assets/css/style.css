@@ -175,12 +175,11 @@ body {
 }
 
 #logOutBtn {
-    background: #b5a2ad;
-    height: 40px;
+    width: 150px;
+    margin-top: 20px;
 }
 
 #saveBtn {
-    /* background: green; */
     width: 150px;
     margin-top: 20px;
 }
